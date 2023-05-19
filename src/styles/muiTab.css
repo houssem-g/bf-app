@@ -1,0 +1,80 @@
+.MuiTabs-indicator {
+    display: none;
+}
+@media screen and (min-width: 750px) {
+
+    .MuiTabs-root {
+        min-height: 46px !important;
+    }
+
+
+    .MuiTabs-flexContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .MuiButtonBase-root.MuiTab-root {
+        min-height: 46px !important;
+        border-radius: 23px;
+    }
+    .MuiSwitch-track {
+        background-color: #161819 !important;
+    }
+    .MuiSwitch-thumb {
+        color: #9474EF;
+        width: 17px !important;
+        height: 17px !important;
+        border-radius: 50% !important;
+        margin-top: 2px !important;
+    }
+    .MuiSwitch-track {
+        box-sizing: border-box;
+        background: #0A0A0A !important;
+        border: 1px solid #363636;
+    }
+    .MuiSlider-track {
+    background: linear-gradient(269.73deg, rgb(10, 181, 127) 4.17%, rgb(248, 176, 115) 109.36%);
+    height: 8px !important;
+    border-radius: 10px !important ;
+    }
+    .MuiSlider-rail{
+        height: 31% !important;
+        background: rgba(134, 133, 138, 0.2) !important;
+        border-radius: 10px !important ;
+          width: 7cm;
+  height: 7cm;
+    }
+    .MuiSlider-thumb {
+        position: relative !important;
+        border-radius: 50% !important;
+        background-color: #FFFFFF !important;
+        width: 20px !important;
+        height: 20px !important;
+     }
+     .MuiSlider-thumb::before {
+        content: '';
+        position: absolute;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50% !important;
+        background-color: #0AB57F
+        !important;
+      }
+}
+@media screen and (max-width: 750px) {
+    .MuiTabs-root {
+        min-height: 25px !important;
+    }
+    .MuiButtonBase-root.MuiTab-root {
+        min-height: 20px !important;
+        border-radius: 23px;
+    }
+    .MuiTabs-flexContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+    }
+}

@@ -1,0 +1,104 @@
+@media screen and (min-width: 750px) {
+    .root {
+        flex-grow: 1;
+        background-color: #161819;
+        height: 10em;
+    }
+    .containerParrent{
+
+        background-color: #161819;
+        position: absolute;
+        width: 100%;  /* I prefer the percent in order to have a design more adaptative */
+        height: 81px;
+        left: 0px;
+        top: 30px;
+        border-bottom: 1px solid #363636;
+        display: flex;
+    }
+    .parentDiv {
+        /* align-items: center; */
+        display:flex;
+        background-color: #161819;
+        height: 70%;
+    }
+    .buttonDiv {
+        color: white;
+        margin-top: 50%;
+        background-color: #161819;
+        display: flex;
+        flex-direction: column;
+    }
+    .buttonParentDiv {
+        color: white;
+        background-color: #161819;
+        /* height: 10em; */
+        display:flex;
+    }
+
+    .titlesBar {
+        max-width: 100%;
+        background-color: #0A0A0A;
+        border: 1px solid #363636;
+        border-radius: 38.5px;
+        width: 464px;
+  
+        left: 513px;
+        top: 30px;
+        opacity: 1;
+        }
+    .contentTitleBar {
+        color:white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .switcherContainer {
+        position: relative;
+        
+    }
+      .switcherCircle {
+        width: 18px; /* Adjust the size of the icon and the background circle */
+        height: 18px;
+        border-radius: 50%;
+        background-color: #9474EF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 9%;
+      }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .switcherContainer {
+        display: none;
+    }
+    .containerParrent{
+
+        background-color: #161819;
+        width: 100%;  /* I prefer the percent in order to have a design more adaptative */
+        height: 81px;
+        left: 0px;
+        top: 30px;
+        border-bottom: 1px solid #363636;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contentTitleBar {
+        color:white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 23px;
+
+    }
+    .logoContainer{
+        text-align: center;
+    }
+
+}

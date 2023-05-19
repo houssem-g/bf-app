@@ -1,0 +1,283 @@
+.dataContainer{
+
+    position: absolute;
+    width: 92%;
+    height: 45.6%;
+    left: 60px;
+    top: 305px;
+    background: radial-gradient(56.06% 101.22% at 133.87% -42.59%, #DEBCCD 64.2%, #0AB57F 73.22%, #0A0A0A 120%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    
+    backdrop-filter: blur(150px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 44px;
+}
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    /* width: 100%; */
+    height: 91%;
+    top: 25px;
+    left: 24px;
+    margin-right: 50px;
+    background: rgba(23, 24, 25, 0.6);
+    border-radius: 46px;
+
+}
+.dataLeftSide {
+    display: block;
+    height: 100%;
+    width: 30%;
+}
+.dataSummary {
+    box-sizing: border-box;
+
+    height: 70%;
+    /* left: 84.05px;
+    top: 330px; */
+
+    background: rgba(22, 24, 25, 0.8);
+    border: 1px solid #363636;
+    backdrop-filter: blur(95px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 25px;
+}
+
+.dataSummaryDetails {
+    width: 84%;
+    position: absolute;
+    left: 8%;
+    height: 54%;
+    display: block;
+}
+.dataSummaryDetails > p {
+    position: relative;
+
+    left: 0%;
+    top: 18%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.dataSummaryDetails > h3 {
+    position: absolute;
+
+    right: 0%;
+    top: 45%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: right;
+    margin: 0;
+    color: #FFFFFF;
+
+}
+.spanTotal {
+    position: absolute;
+    right: 0%;
+    top: 32%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    color: #86858A;
+}
+.spanOGY {
+    /* OGY */
+    position: absolute;
+    right: 0%;
+    top: 70%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #86858A;
+}
+.locked {
+    /* Locked */
+    position: absolute;
+    width: 83%;
+    height: 17%;
+    left: 9%;
+    top: 57%;
+    box-sizing: border-box;
+    background: #0D0E0E;
+    border: 1px solid #141617;
+    border-radius: 40.5px;
+}
+.lockedText {
+    /* Locked */
+    position: absolute;
+    left: 7%;
+    top: 34%;
+    /* Small_title */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #86858A;
+}
+.lockedNumber > input {
+    /* 4’786’027’383 */
+    position: absolute;
+    right: 5%;
+    top: 32%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    background: #0D0E0E;
+    border: none;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.rewards {
+    position: absolute;
+    width: 83%;
+    height: 17%;
+    left: 9%;
+    top: 77%;
+
+    box-sizing: border-box;
+    background: #0D0E0E;
+    border: 1px solid #141617;
+    border-radius: 40.5px;
+}
+.rewardsText {
+    /* Locked */
+    position: absolute;
+    left: 7%;
+    top: 34%;
+    /* Small_title */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #86858A;
+}
+.rewardsNumber {
+    /* 4’786’027’383 */
+    position: absolute;
+    right: 5%;
+    top: 32%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.dataEstimation {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    height: 24%;
+    top: 32px; 
+    background: rgba(22, 24, 25, 0.8);
+    border: 1px solid #363636;
+    backdrop-filter: blur(95px);
+    border-radius: 25px;
+}
+
+.dataEstimationDetails {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFFFFF;
+    width: 84%;
+    left: 8%;
+    top: 18%;
+    align-items: center;
+}
+.dataEstimationDetailsText{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.dataEstimationDetailsPercent {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    /* identical to box height */
+    text-align: right;
+    color: #FFFFFF;
+}
+.dataEstimationInfo {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 84%;
+    left: 8%;
+    top: 56%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    color: #86858A;
+}
+.sliderContainer {
+    
+    position: absolute;
+    width: 84%;
+    left: 8%;
+    top: 64%;
+
+}
+
+
+
+
+
+
+.dataRightSide {
+    /* Rectangle 14 */
+    box-sizing: border-box;
+    position: relative;
+    width: 64%;
+    height: 100%;
+
+    /* top: -38px; */
+    background: #151718;
+    border: 1px solid #363636;
+    border-radius: 25px;
+}

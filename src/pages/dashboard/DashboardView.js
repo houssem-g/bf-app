@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from '../../components/navbar';
-import GeneralData from "../../components/generalData";
+import GeneralData from "../../components/generalData.tsx";
 import styles from "../../styles/dashboard.module.css"
 export const DashboardView = () => {
     return (

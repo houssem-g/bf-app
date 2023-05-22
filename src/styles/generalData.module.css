@@ -1,3 +1,4 @@
+
 .dataContainer{
 
     position: absolute;
@@ -67,21 +68,7 @@
     margin: 0;
     color: #FFFFFF;
 }
-.dataSummaryDetails > h3 {
-    position: absolute;
 
-    right: 0%;
-    top: 45%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 43px;
-    text-align: right;
-    margin: 0;
-    color: #FFFFFF;
-
-}
 .spanTotal {
     position: absolute;
     right: 0%;
@@ -146,9 +133,8 @@
     background: #0D0E0E;
     border: none;
     /* identical to box height */
-
     text-align: right;
-
+    max-width: 60%;
     color: #FFFFFF;
 }
 
@@ -264,20 +250,176 @@
 
 }
 
-
-
-
-
-
 .dataRightSide {
     /* Rectangle 14 */
     box-sizing: border-box;
     position: relative;
     width: 64%;
     height: 100%;
-
     /* top: -38px; */
     background: #151718;
     border: 1px solid #363636;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.dataRightSide > p {
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 92%;
+    margin-top: 0px;
+}
+
+  
+  .dataRightSide canvas {
+    max-width: 60%;
+    max-height: 60%;
+    
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .dataRightSide canvas.chartjs-render-monitor {
+    width: 40px !important;
+  }
+
+  .chartLegend{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+  
+  .chartLegendItem {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .chartLegendColor {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+  
+  .chartLegendLabel {
+    font-size: 14px;
+    color: #333;
+  }
+
+
+
+
+
+  .chartjs-tooltip {
+    position: absolute;
+    width: 10%;
+    height: 31px;
+    background: #141617;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  
+  .tooltipTitle {
+    height: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 10px;
+    color: #FFFFFF;
+  }
+  
+  .tooltipBody {
+    height: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    color: #9474EF;
+  }
+  
+  .percentCircle {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    background: #9474EF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+  }
+  .coreText {
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 218%;
+    line-height: 43px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+ }
+
+@media screen and (min-width: 860px) {
+    .dataSummaryDetails > h3 {
+        position: absolute;
+
+        right: 0%;
+        top: 45%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 219%;
+        line-height: 43px;
+        text-align: right;
+        margin: 0;
+        color: #FFFFFF;
+
+    }
+}
+@media screen and (max-width: 860px) {
+    .dataSummaryDetails > h3 {
+        position: absolute;
+
+        right: 0%;
+        top: 45%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 100%;
+        line-height: 43px;
+        text-align: right;
+        margin: 0;
+        color: #FFFFFF;
+
+    }
 }

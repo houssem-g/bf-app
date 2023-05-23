@@ -407,6 +407,67 @@
     }
 }
 @media screen and (max-width: 860px) {
+    .dataContainer{
+
+        position: absolute;
+        width: 100%;
+        height: 60.6%;
+        top: 305px;
+        left: 0px;
+        background: radial-gradient(56.06% 101.22% at 133.87% -42.59%, #DEBCCD 64.2%, #0AB57F 73.22%, #0A0A0A 120%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        -webkit-backdrop-filter: blur(150px);
+        backdrop-filter: blur(150px);
+        border-radius: 44px;
+    }
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        height: 91%;
+        top: 25px;
+        left: 24px;
+        margin-right: 50px;
+        background: rgba(23, 24, 25, 0.6);
+        border-radius: 46px;
+    }
+    .dataLeftSide {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .dataRightSide {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 90%;
+        top: 30px;
+        background: #151718;
+        border: 1px solid #363636;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .dataRightSide canvas {
+        max-width: 85%;
+        max-height: 85%;
+        width: 85%!important;
+        height: auto !important;
+      }
+    .coreText {
+        position: absolute;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 150%;
+        line-height: 43px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
     .dataSummaryDetails > h3 {
         position: absolute;
 
@@ -420,6 +481,18 @@
         text-align: right;
         margin: 0;
         color: #FFFFFF;
-
+    }
+    .chartjs-tooltip {
+        position: absolute;
+        width: 50%;
+        height: 31px;
+        background: #141617;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 4px;
+        box-sizing: border-box;
     }
 }

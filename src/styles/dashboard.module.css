@@ -26,6 +26,7 @@
 
 @media screen and (max-width: 750px) {
     .titleDashboard {
+        position: absolute;
         width: 395px;
         height: 100px;
         font-family: 'Montserrat';
@@ -35,5 +36,6 @@
         line-height: 50px;
         color: #FFFFFF;
         text-align: center;
+        top: 10%;
     }
 }

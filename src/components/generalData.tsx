@@ -8,7 +8,6 @@ interface GeneralDataProps {
 
 }
 
-
 const GeneralData: React.FC<GeneralDataProps> = () => {
   const [value, setValue] = useState<number>(2);
   const [inputValue, setInputValue] = useState<number>(0.0);
@@ -183,25 +182,25 @@ const GeneralData: React.FC<GeneralDataProps> = () => {
             <div className={styles.locked}>
               <span className={styles.lockedText}>Locked</span>
               <span className={styles.lockedNumber}>
-                <input type="text" value={inputValue} onChange={handleInputChange} onFocus={handleInputFocus} />
+                <input data-testid="locked-input" type="text" value={inputValue} onChange={handleInputChange} onFocus={handleInputFocus} />
               </span>
             </div>
             <div className={styles.rewards}>
               <span className={styles.rewardsText}>Rewards</span>
-              <span className={styles.rewardsNumber}>{formatRewardValue(rewardValue)}</span>
+              <span data-testid="reward-number" className={styles.rewardsNumber}>{formatRewardValue(rewardValue)}</span>
             </div>
           </div>
           <div className={styles.dataEstimation}>
             <div className={styles.dataEstimationDetails}>
               <div className={styles.dataEstimationDetailsText}>Estimare Rewards</div>
-              <div className={styles.dataEstimationDetailsPercent}>{percenteValue}%</div>
+              <div data-testid="percent-gain" className={styles.dataEstimationDetailsPercent}>{percenteValue}%</div>
             </div>
             <div className={styles.dataEstimationInfo}>
               <div>Neuron dissolve delay</div>
               <div>{value} years</div>
             </div>
             <div className={styles.sliderContainer}>
-              <Box width={337}>
+              <Box width={'100%'}>
                 <Slider value={typeof value === 'number' ? value : 0} onChange={handleSliderChange} aria-labelledby="input-slider" max={10} />
               </Box>
             </div>

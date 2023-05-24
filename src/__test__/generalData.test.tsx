@@ -43,8 +43,6 @@ describe('GeneralData', () => {
       expect(rewardsPercentElement).toHaveTextContent('50%');
     })
 
-
-
   });
 
   test('updates percentage on slider change', async () => {

@@ -18,48 +18,49 @@ function dynamicProps(index) {
 
 const dict_paths = {
   "/": 0,
-  "/Dashboard/" : 0,
-  "/Explorer/": 1,
-  "/Governance/": 2,
+  "/dashboard" : 0,
+  "/explorer": 1,
+  "/governance": 2,
 
 };
 
 
 const Navbar = ({titles}) => {
+  const [value, setValue] = useState(0);
+  const [checked, setChecked] = useState(true);
   let history = useNavigate();
 
   const goTo = (path) => {
-    path = path.split(":")[0] || path
       history(path || All.ROOT);
   }
-
-  const [value, setValue] = useState(0);
-  const [checked, setChecked] = useState(true);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  let location = useLocation()
-  location = location.pathname.split("?")[0] || location.pathname
-  let curPath = dict_paths[location]
-  
+
   const handleChangeSwitcher = (event) => {
     setChecked(event.target.checked);
   };
+  
+  let location = useLocation()
+  location = location.pathname
+  let curPath = dict_paths[location]
+
+
   useEffect(() => {
     
     if (Object.keys(dict_paths).includes(location)) {
       setValue(dict_paths[location]);
     }
     else {
-      setValue(false)
+      setValue(0)
     }
     }, [curPath, location]);
 
 
   const listOfTab = []
   titles.forEach((val, ind) => {
-    listOfTab.push(<Tab sx={{opacity:1, fontFamily: "Verdana", background: value === ind ? 'white' : 'transparent', color: value === ind ? '#161819' : '#9e9c9c', borderRadius:"23px", width: "30%"}} key = {val} label={val} {...dynamicProps(ind)} onClick={()=>goTo(All[val])}/>)
+    listOfTab.push(<Tab {...dynamicProps(ind)}  sx={{opacity:1, fontFamily: "Verdana", background: value === ind ? 'white' : 'transparent', color: value === ind ? '#161819' : '#9e9c9c', borderRadius:"23px", width: "30%"}} key = {val} label={val} onClick={()=>goTo(All[val])}/>)
     }
   )
 
@@ -84,12 +85,12 @@ const Navbar = ({titles}) => {
         inputProps={{ 'aria-label': 'controlled' }}
         icon= {
           <div className={styles.switcherCircle}>
-            <NightlightRoundIcon style={{ fontSize: 16, color: 'black' }} /> {/* Adjust the icon size and color */}
+            <NightlightRoundIcon style={{ fontSize: 16, color: 'black' }} /> 
           </div>
         }
         checkedIcon= {
           <div className={styles.switcherCircle}>
-            <NightlightRoundIcon style={{ fontSize: 16, color: 'black' }} /> {/* Adjust the icon size and color */}
+            <NightlightRoundIcon style={{ fontSize: 16, color: 'black' }} /> 
           </div>
         }
 

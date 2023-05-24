@@ -41,8 +41,8 @@
         height: 31% !important;
         background: rgba(134, 133, 138, 0.2) !important;
         border-radius: 10px !important ;
-          width: 7cm;
-  height: 7cm;
+        width: 7cm;
+        height: 7cm;
     }
     .MuiSlider-thumb {
         position: relative !important;
